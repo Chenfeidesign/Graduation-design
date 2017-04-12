@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
     border:0;
-    outline:0;
     list-style: none;
     text-decoration: none;
     font-size: 12px;
@@ -124,18 +123,6 @@ header{
     padding: 16px 12px 0;
     margin-left: 10px;
 }
-#header_nav .has_sub i{
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    margin-left: 5px;
-    background: url(../img/nav_arrow.png) no-repeat right -36px;
-    opacity: 0.5;
-}
-#header_nav li:hover i{
-    background-position: right 3px;
-    opacity: 1;
-}
 #header_nav li{
     position: relative;
     float: left;
@@ -148,6 +135,43 @@ header{
 }
 #header_nav li a span{
     font-size: 14px;
+}
+#header_nav .has_sub i{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-left: 5px;
+    background: url(../img/nav_arrow.png) no-repeat right -36px;
+    opacity: 0.5;
+}
+#header_nav li:hover i{
+    background-position: right 3px;
+    opacity: 1;
+}
+#header_nav li:hover .has_sub{
+    z-index: 101;
+    padding: 2px 9px 3px 9px;
+    border: 1px solid #e3e3e3;
+    border-bottom-width: 0;
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+}
+#header_nav li:hover .sub_nav{
+    display: block;
+}
+#header_nav li .inner{
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+#header_nav li .inner a{
+    display: block;
+    padding: 2px 5px;
+    line-height: 1.3em;
+}
+#header_nav li .inner a span{
+    font-size: 12px;
 }
 #header_nav .sub_nav{
     display: none;
@@ -167,6 +191,30 @@ header{
     height: 30px;
     padding: 13px 15px 0 0;
 }
+#search_bar input[type=text]{
+    height: 18px;
+    width: 120px;
+    padding: 5px 8px;
+    padding-right: 35px;
+    color: rgba(0,0,0,0.4);
+    border: 1px solid #b3b3b3;
+}
+#search_bar input[type=submit]{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    box-shadow: none;
+    background: transparent url(../img/search.png) no-repeat center center;
+    border-width: 0;
+    opacity: 0.3;
+    outline: 0;
+    transition: opacity .35s ease-out;
+}
+#search_bar input[type=submit]:hover{
+    opacity: 1;
+}
 #cart{
     position: relative;
     float: right;
@@ -181,6 +229,20 @@ header{
     height: 30px;
     font-size: 14px;
     line-height: 30px;
+}
+#cart a em{
+    float: left;
+    width: 24px;
+    height: 18px;
+    overflow: hidden;
+    margin-right: 6px;
+    padding: 7px 0 2px;
+    color: rgba(255,255,255,0.9);
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+    background: url(../img/bag.png) no-repeat 0 1px;
+    font-style: normal;
 }
 main{
 

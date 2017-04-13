@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-size: 12px;
+    font-style: normal;
 }
 body{
     background: #EDECE9;
@@ -44,6 +45,7 @@ a:hover{
     background-color: rgba(0,0,0,0.05);
     border-radius: 4px;
 }
+
 #top_nav{
     float: left;
     width: auto;
@@ -116,7 +118,10 @@ header{
     height: 40px;
     width: 150px;
     margin: 8px 0 0 10px;
-    background: #ccc;
+}
+#logo img{
+    width:150px;
+    height:40px;
 }
 #header_nav{
     float: left;

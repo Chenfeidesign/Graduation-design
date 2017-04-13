@@ -1,4 +1,31 @@
-
+main .swiper_wrapper img{
+    width:960px;
+    height:420px;
+}
+#circles{
+    box-sizing: border-box;
+    padding-right: 50px;
+    text-align: right;
+}
+.swiper-pagination span{
+    background: rgba(0,0,0,0.35);
+}
+.swiper-button-next,.swiper-button-prev{
+    font-size: 30px;
+    font-family: '宋体';
+    line-height: 34px;
+    font-weight: bold;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+}
+.swiper-container:hover .swiper-button-next,.swiper-container:hover .swiper-button-prev{
+    opacity: 0.2;
+}
+.swiper-container .swiper-button-next:hover,.swiper-container .swiper-button-prev:hover{
+    opacity: 0.6;
+}
 .best_goods .hd{
     height: 31px;
     border-bottom: 1px solid rgba(0,0,0,0.18);

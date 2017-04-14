@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>毕业设计</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/1.css">
+    <title>留言板-DCSHOP商城</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/message.css">
 </head>
 <body>
     <div id="container">
@@ -12,7 +12,7 @@
             <div id="login">
                 <p>
                     <span>欢迎您来到商城！</span>
-                    <a href="">注册</a>
+                    <a href="register.html">注册</a>
                     <a href="login.html">登录</a>
                 </p>
             </div>
@@ -44,7 +44,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="message.html">留言板</a>
+                        <a href="">留言板</a>
                     </li>
                     <li>
                         <a href="">积分商城</a>
@@ -53,7 +53,7 @@
             </nav>
         </div>
         <header>
-            <a href="index.html" id="logo" title=""><img src="img/logo.png"/></a>
+            <a href="index.html" id="logo" title=""><img src="../img/logo.png"/></a>
             <nav id="header_nav">
                 <ul>
                     <li>
@@ -113,39 +113,39 @@
             </div>
         </header>
         <main>
-            <div class="tab_wrapper">
-                <div class="tabs">
-                    <em class="label">排序：</em>
-                    <a href="" class="current">上架时间<em class="arrow_up">&uarr;</em></a>
-                    <a href="">更新时间</a>
-                    <a href="">价格</a>
-                </div>
-            </div>
-            <div class="box" id="list">
-                <div class="bd product_list">
-                    <ul>
-                        <li>
-                            <a href="" class="photo"><img src="img/1.jpg" alt="破洞低腰牛仔裤"/></a>
-                            <a href="" class="name">破洞低腰牛仔裤</a>
-                            <span class="price"><span>￥</span>349.00</span>
-                        </li>
-                        <li>
-                            <a href="" class="photo"><img src="img/1.jpg" alt="破洞低腰牛仔裤"/></a>
-                            <a href="" class="name">破洞低腰牛仔裤</a>
-                            <span class="price"><span>￥</span>349.00</span>
-                        </li>
-                        <li>
-                            <a href="" class="photo"><img src="img/1.jpg" alt="破洞低腰牛仔裤"/></a>
-                            <a href="" class="name">破洞低腰牛仔裤</a>
-                            <span class="price"><span>￥</span>349.00</span>
-                        </li>
-                        <li>
-                            <a href="" class="photo"><img src="img/1.jpg" alt="破洞低腰牛仔裤"/></a>
-                            <a href="" class="name">破洞低腰牛仔裤</a>
-                            <span class="price"><span>￥</span>349.00</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="hd"><h3>留言板</h3></div>
+            <div class="bd">
+                <p class="empty"></p>
+                <form action="" method="post" onSubmit="return submitMsgBoard(this)" class="form">
+                    <fieldset>
+                        <p class="label"><b>用户名</b>
+                            <em>匿名用户</em>
+                        </p>
+                        <label class="required"><b>E-mail</b>
+                            <input type="email" name="user_email" value="" autocomplete="on" required>
+                        </label>
+                        <fieldset class="radio_wrap label"><b>留言类型</b>
+                            <fieldset>
+                                <label><input type="radio" name="msg_type" value="0" checked="checked">留言</label>
+                                <label><input type="radio" name="msg_type" value="1">投诉</label>
+                                <label><input type="radio" name="msg_type" value="2">询问</label>
+                                <label><input type="radio" name="msg_type" value="3">售后</label>
+                                <label><input type="radio" name="msg_type" value="4">求购</label>
+                            </fieldset>
+                        </fieldset>
+                        <label class="required"><b>主题</b>
+                            <input type="text" name="msg_title" required>
+                        </label>
+                        <label class="required"><b>留言内容</b>
+                            <textarea name="msg_content" rows="6" cols="20" required></textarea>
+                        </label>
+                        <div class="submit_wrap">
+                            <input type="submit" value="我要留言">
+                        </div>
+                        <input type="hidden" name="act" value="act_add_message">
+                        <input type="hidden" name="id" value="">
+                    </fieldset>
+                </form>
             </div>
         </main>
         <footer>

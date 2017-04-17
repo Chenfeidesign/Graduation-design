@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>积分商城-商城</title>
+    <title>购物车-DCSHOP商城</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/666.css">
+    <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
 <div id="container">
@@ -15,14 +15,14 @@
         <div id="login">
             <p>
                 <span>欢迎您来到商城！</span>
-                <a href="">注册</a>
+                <a href="register.html">注册</a>
                 <a href="login.html">登录</a>
             </p>
         </div>
         <nav id="top_nav">
             <ul>
                 <li>
-                    <a href="">帮助中心</a>
+                    <a href="help.html">帮助中心</a>
                 </li>
                 <li>
                     <a href="" class="has_sub">用户中心<i></i></a>
@@ -50,7 +50,7 @@
                     <a href="message.html">留言板</a>
                 </li>
                 <li>
-                    <a href="">积分商城</a>
+                    <a href="integral.html">积分商城</a>
                 </li>
             </ul>
         </nav>
@@ -101,12 +101,12 @@
                     <a href="">特价</a>
                 </li>
                 <li>
-                    <a href="">积分商城</a>
+                    <a href="integral.html">积分商城</a>
                 </li>
             </ul>
         </nav>
         <div id="cart">
-            <a href="" title="查看购物车">购物袋<em>0</em></a>
+            <a href="cart.html" title="查看购物车">购物袋<em>0</em></a>
         </div>
         <div id="search_bar">
             <form method="get" action="" id="search">
@@ -116,15 +116,18 @@
         </div>
     </header>
     <main>
-        <h1 class="jfsc">积分商城</h1>
-        <div class="has_tab_box">
-            <div class="tab_wrapper">
-                <div class="tabs">
-                    <em class="label">排序 :</em>
-                    <h1>上架时间<em></em></h1>
-                    <h2>更新时间</h2>
-                    <h3>积分</h3>
-                </div>
+        <div class="progress_bar">
+            <ol>
+                <li class="current"><p>1</p>购物车</li>
+                <li><p>2</p>登入</li>
+                <li><p>3</p>提交订单</li>
+                <li><p>4</p>付款</li>
+            </ol>
+        </div>
+        <div class="bd">
+            <div class="cart_produst_list">
+                <p class="empty">您的购物车中没有商品</p>
+                <p class="flow_action"><a href="" class="next button bright_button"><span>« 继续购买商品</span></a></p>
             </div>
         </div>
     </main>
@@ -148,7 +151,7 @@
                 </li>
             </ul>
         </nav>
-        <p id="copyright">&copy; 2017 CF&nbsp;版权所有&nbsp;&nbsp;</p>
+        <p id="copyright">&copy; 2017 DCSHOP&nbsp;版权所有&nbsp;&nbsp;</p>
     </footer>
 </div>
 </body>
